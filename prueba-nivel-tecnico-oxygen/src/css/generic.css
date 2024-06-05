@@ -1,0 +1,17 @@
+.horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.horizontal > * {
+    margin-inline: 1rem;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.vertical > * {
+    margin-block: 1rem;
+}
