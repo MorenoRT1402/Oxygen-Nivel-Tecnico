@@ -1,14 +1,21 @@
 /* eslint-disable react/prop-types */
-const Select = ( {options} ) => {
-    return(
-        <select>
-            {options.map((option) => (
-                <option key={option.key} value={option.value}>
-                    {option.value}
+import { GetOperationName } from "../js/options";
+
+const Select = ({ options , onChange } ) => {
+
+    const handleChange = event => {
+        onChange(event.target.value);
+    };
+
+    return (
+        <select className='input' onChange={handleChange}>
+            {options.map((option, index) => (
+                <option key={index} value={option.id}>
+                    {GetOperationName(option)}
                 </option>
             ))}
         </select>
-    )
-}
+    );
+};
 
-export default Select
+export default Select;

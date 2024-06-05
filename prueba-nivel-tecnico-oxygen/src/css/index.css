@@ -27,6 +27,10 @@ main {
     margin: 58px;
 }
 
+h3 {
+    font-size: var(--font-size);
+}
+
 label {
     font-family: var(--font-family);
 font-size: 16px;
