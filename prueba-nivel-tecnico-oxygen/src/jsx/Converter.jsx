@@ -5,7 +5,8 @@ import '../css/local/Converter.css';
 import { OPTIONS, BaseID, GetResult, ConversionID, GetOperation } from "../js/options";
 import { useEffect, useState } from "react";
 
-const Converter = () => {
+// eslint-disable-next-line react/prop-types
+const Converter = ({ AddFav }) => {
     const defaultOption = OPTIONS[0];
     const [operation, setOperation] = useState(defaultOption);
     const [baseNumber, setBaseNumber] = useState(100);
@@ -28,6 +29,14 @@ const Converter = () => {
         setOperation(optToSet)
     }
 
+    const AddToFavorites = () => {
+        const fav = `${baseNumber} ${baseMeasure} → ${result} ${conversionMeasure}`
+        AddFav(fav)
+
+        // empty input
+        setBaseNumber(0)
+    }
+
     return (
         <section className="converter-box min-width">
             <header>convert</header>
@@ -42,7 +51,7 @@ const Converter = () => {
                 </div>
             </div>
             <div id="results">
-                <img src={heartIcon} alt="" id='save-btn' />
+                <button onClick={AddToFavorites}><img src={heartIcon} alt=""/></button>
                 <section className="horizontal margin">
                     <h3>{result}</h3>
                     <label>{conversionMeasure}</label>

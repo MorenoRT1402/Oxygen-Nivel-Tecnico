@@ -1,10 +1,16 @@
 import Cross from '../assets/Cross.svg'
 
-const OperationInfo = () => {
+// eslint-disable-next-line react/prop-types
+const OperationInfo = ({fav, remove}) => {
+
+    const RemoveFav = () => {
+        remove(fav)
+    }
+
     return (
     <article className="min-width">
-        <span>15 cm → 5.91 </span>
-        <button><img src={Cross}></img></button>
+        <span>{fav}</span>
+        <button onClick={RemoveFav}><img src={Cross}></img></button>
     </article>
     )
 }

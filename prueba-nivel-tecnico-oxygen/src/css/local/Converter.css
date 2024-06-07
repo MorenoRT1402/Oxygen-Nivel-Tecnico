@@ -19,6 +19,8 @@
 }
 
 .converter-box > div > * {
+    background-color: transparent;
+    border: none;
     margin-inline: auto;
 }
 
