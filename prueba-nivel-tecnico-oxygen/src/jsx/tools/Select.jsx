@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { GetOperationName } from "../js/options";
+import { GetOperationName } from "../../js/options";
 
 const Select = ({ options , setter } ) => {
     const handleChange = (event) => {

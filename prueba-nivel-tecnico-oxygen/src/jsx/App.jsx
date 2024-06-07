@@ -1,8 +1,6 @@
+import '../css/local/generic.css'
 import UnitConvertionHeader from "./UnitConvertionHeader"
-import Converter from "./Converter"
-import './css/generic.css'
-// import "./css/App.css"
-// import "./css/Converter.css"
+import MainComponent from "./MainComponent"
 
 function App() {
 
@@ -11,12 +9,7 @@ function App() {
         <header>
             <UnitConvertionHeader></UnitConvertionHeader>
         </header>
-        <main className="vertical">
-        <Converter></Converter>
-        <section>
-            <label>saved</label>
-        </section>
-        </main>
+        <MainComponent></MainComponent>
         <footer>
             <h3>Terms of Service</h3>
             <h3>Privacy policy</h3>

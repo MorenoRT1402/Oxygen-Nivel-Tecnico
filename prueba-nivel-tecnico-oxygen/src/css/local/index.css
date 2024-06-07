@@ -1,5 +1,5 @@
-@import url(global/font.css);
-@import url(global/theme.css);
+@import url(../global/font.css);
+@import url(../global/theme.css);
 
 * {
     margin : 0;
@@ -25,6 +25,12 @@ main, #root {
 main {
     align-items: center;
     margin: 58px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h3 {

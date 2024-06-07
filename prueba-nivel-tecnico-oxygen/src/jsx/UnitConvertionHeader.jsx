@@ -1,4 +1,4 @@
-import convertionLogo from "./assets/Icon.svg"
+import convertionLogo from "../assets/Icon.svg"
 
 const UnitConvertionHeader = () => {
     return (

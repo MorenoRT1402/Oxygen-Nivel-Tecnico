@@ -1,8 +1,8 @@
 import Select from "./tools/Select";
-import convertIcon from "./assets/Exchange.svg";
-import heartIcon from "./assets/Heart.svg";
-import "./css/Converter.css";
-import { OPTIONS, BaseID, GetResult, ConversionID, GetOperation } from "./js/options";
+import convertIcon from "../assets/Exchange.svg";
+import heartIcon from "../assets/Heart.svg";
+import '../css/local/Converter.css';
+import { OPTIONS, BaseID, GetResult, ConversionID, GetOperation } from "../js/options";
 import { useEffect, useState } from "react";
 
 const Converter = () => {
