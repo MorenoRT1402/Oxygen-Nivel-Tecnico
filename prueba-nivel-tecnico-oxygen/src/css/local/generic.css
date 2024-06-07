@@ -19,3 +19,7 @@
 .text-center {
     text-align: center;
 }
+
+.min-width {
+    min-width: 349px
+}

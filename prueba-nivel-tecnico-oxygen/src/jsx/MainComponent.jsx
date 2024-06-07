@@ -3,7 +3,7 @@ import Favourites from './Favourites'
 
 const MainComponent = () => {
     return (
-        <main className="vertical">
+        <main>
         <Converter></Converter>
         <Favourites></Favourites>
         </main>

@@ -4,7 +4,7 @@ const UnitConvertionHeader = () => {
     return (
         <>
         <img src={convertionLogo} alt="" />
-        <h3 className="bold">unit converter</h3>
+        <h3>unit converter</h3>
         </>
     )
 }

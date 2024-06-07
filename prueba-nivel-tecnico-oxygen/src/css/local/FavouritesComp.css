@@ -1,0 +1,29 @@
+#saved {
+  margin-top: calc(2 * var(--main-parts-gap));
+  margin-bottom: 22px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  ul > article {
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 10px;
+    background-color: var(--terciary-color);
+  }
+
+  article > span {
+    margin-left: 18px;
+  }
+
+  article > button {
+    margin-right: 28px;
+    border: none;
+  }

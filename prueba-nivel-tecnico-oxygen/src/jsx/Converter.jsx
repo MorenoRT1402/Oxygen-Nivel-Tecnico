@@ -29,7 +29,7 @@ const Converter = () => {
     }
 
     return (
-        <section className="converter-box">
+        <section className="converter-box min-width">
             <header>convert</header>
             <div id="inputs">
                 <div id="select">

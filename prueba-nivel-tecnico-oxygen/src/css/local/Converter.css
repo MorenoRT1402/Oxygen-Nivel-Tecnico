@@ -1,6 +1,5 @@
 .converter-box {
     width: 100%;
-    min-width: 349px;
     max-width: 717px;
     min-height: 193px;
     max-height: 209px;
@@ -8,9 +7,6 @@
     color: white;
     border: 2px solid black;
     border-radius: 21px;
-
-    display: flex;
-    flex-direction: column;
 }
 
 .converter-box > * {
@@ -19,9 +15,7 @@
 
 .converter-box > div {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    width: 100%;
 }
 
 .converter-box > div > * {
@@ -31,12 +25,10 @@
 section > header {
     margin-left: 38px;
     margin-top: var(--font-size);
-    min-width: 100%;
     font-family: var(--font-family);
     font-size: var(--font-size);
     font-weight: var(--font-weight);
     line-height: var(--line-height);
-    text-align: var(--text-align)
 }
 
 .input {

@@ -4,7 +4,7 @@ import '../css/local/FavouritesComp.css'
 const Favourites = () => {
     return (
         <section>
-            <label className="text-center">saved</label>
+            <label id="saved">saved</label>
             <ul>
                 <OperationInfo></OperationInfo>
                 <OperationInfo></OperationInfo>

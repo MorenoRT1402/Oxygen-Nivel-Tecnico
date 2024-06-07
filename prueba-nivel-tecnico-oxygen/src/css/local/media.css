@@ -1,0 +1,10 @@
+@media screen and (max-width: 390px) { /* mobile */
+    .converter-box {
+        height: 100%;
+    }
+
+    #saved {
+        margin-top: var(--main-parts-gap);
+        margin-bottom: 14px;
+    }
+  }
